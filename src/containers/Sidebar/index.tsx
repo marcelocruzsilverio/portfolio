@@ -1,4 +1,4 @@
-import Paragrafo from "../../components/Paragrafo";
+import { ParagrafoTextoCentralizado } from "../../components/Paragrafo/styles";
 import Titulo from "../../components/Titulo";
 import { BotaoTema, Descricao, Imagem, SidebarContainer } from "./styles";
 
@@ -11,9 +11,9 @@ const Sidebar = () => (
       <Titulo fontSize={20} textalign="center">
         Marcelo Cruz
       </Titulo>
-      <Paragrafo tipo="secundario" fontSize={18}>
+      <ParagrafoTextoCentralizado tipo="secundario" fontSize={18}>
         marcelocruzsilverio
-      </Paragrafo>
+      </ParagrafoTextoCentralizado>
       <Descricao fontSize={12} tipo="principal">
         Aluno Ebac - Curso Desenvolvedor Full Stack Python
       </Descricao>

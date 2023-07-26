@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ParagrafoEstilizado } from "../../components/Paragrafo/styles";
+import { ParagrafoTextoCentralizado } from "../../components/Paragrafo/styles";
 
 export const Imagem = styled.div`
   img {
@@ -17,7 +17,7 @@ export const Imagem = styled.div`
   }
 `;
 
-export const Descricao = styled(ParagrafoEstilizado)`
+export const Descricao = styled(ParagrafoTextoCentralizado)`
   margin-top: 24px;
   margin-bottom: 40px;
 `;
@@ -30,6 +30,8 @@ export const BotaoTema = styled.button`
   font-weight: bold;
   background-color: #282a35;
   cursor: pointer;
+  display: block;
+  margin: 0 auto 16px;
 `;
 
 export const SidebarContainer = styled.div`
