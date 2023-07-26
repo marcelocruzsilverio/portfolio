@@ -2,7 +2,11 @@ import { ParagrafoTextoCentralizado } from "../../components/Paragrafo/styles";
 import Titulo from "../../components/Titulo";
 import { BotaoTema, Descricao, Imagem, SidebarContainer } from "./styles";
 
-const Sidebar = () => (
+type Props = {
+  trocaTema: () => void;
+};
+
+const Sidebar = (props: Props) => (
   <aside>
     <SidebarContainer>
       <Imagem>
@@ -17,7 +21,7 @@ const Sidebar = () => (
       <Descricao fontSize={12} tipo="principal">
         Aluno Ebac - Curso Desenvolvedor Full Stack Python
       </Descricao>
-      <BotaoTema>Trocar de Tema</BotaoTema>
+      <BotaoTema onClick={props.trocaTema}>Trocar de Tema</BotaoTema>
     </SidebarContainer>
   </aside>
 );

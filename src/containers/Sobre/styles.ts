@@ -7,4 +7,11 @@ export const SobreMim = styled.div`
   img {
     height: 157px;
   }
+
+  @media (max-width: 768px) {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
 `;

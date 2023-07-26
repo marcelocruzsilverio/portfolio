@@ -3,14 +3,14 @@ import { ParagrafoTextoCentralizado } from "../../components/Paragrafo/styles";
 
 export const Imagem = styled.div`
   img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 50%;
     margin-bottom: 24px;
   }
 
   @media (max-width: 768px) {
     img {
-      width: 200px;
+      width: 128px;
       display: block;
       margin: 8px auto;
     }
@@ -25,10 +25,10 @@ export const Descricao = styled(ParagrafoTextoCentralizado)`
 export const BotaoTema = styled.button`
   border-radius: 12px;
   padding: 8px;
-  color: #eee;
+  color: ${(props) => props.theme.corTextoBotao};
   font-size: 10px;
   font-weight: bold;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.corPrincipal};
   cursor: pointer;
   display: block;
   margin: 0 auto 16px;
