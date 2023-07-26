@@ -14,4 +14,11 @@ export const SobreMim = styled.div`
       width: 100%;
     }
   }
+
+  @media (min-width: 769px) and (max-width: 1023px) {
+    img {
+      height: auto;
+      width: 80%;
+    }
+  }
 `;

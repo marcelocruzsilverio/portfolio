@@ -34,4 +34,8 @@ export const Container = styled.div`
     max-width: 80%;
     display: block;
   }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    max-width: 90%;
+  }
 `;
